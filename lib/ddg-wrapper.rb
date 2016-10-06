@@ -1,6 +1,6 @@
-require "ddg/wrapper/version"
+require "ddg-wrapper/version"
 
-module Ddg
+module DDG
   module Wrapper
     # Your code goes here...
   end
