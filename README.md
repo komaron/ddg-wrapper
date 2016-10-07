@@ -1,6 +1,6 @@
 # Duck Duck Go Wrapper
 
-A simple Ruby Library wrapper around Duck Duck Go Instant Search API
+A simple Ruby Library wrapper around Duck Duck Go Instant Search [API](https://duckduckgo.com/api)
 
 ## Installation
 
@@ -19,14 +19,20 @@ Or install it yourself as:
     $ gem install ddg-wrapper
 
 ## Usage
+To use Duck Duck Go Wrapper the most simple approach is to initialize and pass it a query.
+```ruby
+> client = DDG::Wrapper::Client.new
+> data = client.query('your_query_string')
+```
+The above will return a hash results containing the urls, logo, and page titles
 
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+If you would like to specify parameters the you could also do the following.
+```ruby
+> client = DDG::Wrapper::Client.new
+> params = client.build_params(query, format, pretty)
+> data = client.get_data(params)
+```
+See Duck Duck Go Instant Search [API](https://duckduckgo.com/api) for more information on accepted parameters
 
 ## Contributing
 
