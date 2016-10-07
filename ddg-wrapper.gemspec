@@ -5,10 +5,10 @@ require 'ddg-wrapper/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "ddg-wrapper"
-  spec.version       = Ddg::Wrapper::VERSION
+  spec.version       = DDG::Wrapper::VERSION
   spec.authors       = ["Komaron James"]
   spec.email         = ["kjames953@gmail.com"]
-  spec.description       = %q{A Ruby Library wrapper around Duck Duck Go Instant Search API}
+  spec.summary       = %q{A Ruby Library wrapper around Duck Duck Go Instant Search API}
   spec.homepage      = "https://github.com/komaron/ddg-wrapper"
   spec.license       = "MIT"
 
