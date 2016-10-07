@@ -1,7 +1,5 @@
-require "ddg-wrapper/version"
-
-module DDG
-  module Wrapper
-    # Your code goes here...
-  end
-end
+require 'rubygems'
+require 'open-uri'
+require 'json'
+require 'ddg-wrapper/client'
+require 'ddg-wrapper/version'
