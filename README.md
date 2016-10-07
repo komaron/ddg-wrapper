@@ -24,7 +24,7 @@ To use Duck Duck Go Wrapper the most simple approach is to initialize and pass i
 > client = DDG::Wrapper::Client.new
 > data = client.query('your_query_string')
 ```
-The above will return a hash results containing the urls, logo, and page titles
+The above will return a hash with results containing the urls, logo, and page titles.
 
 If you would like to specify parameters the you could also do the following.
 ```ruby
