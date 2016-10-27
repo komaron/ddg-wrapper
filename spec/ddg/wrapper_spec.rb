@@ -7,7 +7,7 @@ describe DDG::Wrapper do
 end
 
 describe DDG::Wrapper::Client do
-	before(:all) do
+  before(:all) do
     @client = DDG::Wrapper::Client.new
     @params = @client.build_params('test')
     @custom_params = @client.build_params('rspec','ruby','0')
@@ -19,7 +19,7 @@ describe DDG::Wrapper::Client do
     end
   end
 
-	describe '#initialize paramters' do
+  describe '#initialize paramters' do
     context 'checking parameters' do
       it { expect(@params[:q]).to eq('test') }
       it { expect(@params[:format]).to eq('json') }
